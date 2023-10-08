@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veks-Buddy</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 10%;
+          padding: 6px;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          box-sizing: border-box;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: coral;
+          color: white;
+          padding: 6px 10px;
+          border: none;
+          border-radius: 42px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: rgb(206, 83, 39);
+        }
+        
+        .container {
+          border-radius: 2px;
+          background-color: #f2f2f2;
+          padding: 8px;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="static/img/logo.jpg" alt="Logo"></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="discussion.html"  class="active">Discussion</a></li>
+                <li><a href="share.html">Share Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p style="color: rgb(30, 129, 205);">Become part of the discussion!</p>
+
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="Location">Campus</label>
+          <select id="Location" name="Location">
+            <option>Roodepoort</option>
+            <option>Pretoria</option>
+            <option>Cape Town</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="container-full">
+        <div class="left-pane">
+            <div class="chatter">
+                <table class="chat">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"><img src="static/img/profile.jpg" class="profile" alt="User Profile"></th>
+                            <th><h1>Kimmi Pipper</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                Veks-buddy has been a great help and cant wait for the expo
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chatter">
+                <table class="chat">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"><img src="static/img/profile.jpg" class="profile" alt="User Profile"></th>
+                            <th><h1>Jayla Net</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                @Kimmi i too cant wait to see what else they have to offer
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chatter">
+                <table class="chat">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"><img src="static/img/profile.jpg" class="profile" alt="User Profile"></th>
+                            <th><h1>Kyle</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                content and staff is great
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chatter">
+                <table class="chat">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"><img src="static/img/profile.jpg" class="profile" alt="User Profile"></th>
+                            <th><h1>cammy</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                i like the extra classes
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chatter">
+                <table class="chat">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"><img src="static/img/profile.jpg" class="profile" alt="User Profile"></th>
+                            <th><h1>Brandon</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                expo event looks interesting
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right-pane">
+            <img src="static/img/Poster1.png" alt="Save the Date Banner">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <p>&copy; 2023 Veks-Buddy. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://insagram.com"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       
+      </div>
+</body>
+</html>
